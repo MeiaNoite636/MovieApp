@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "607820103789",
+    "project_id": "themovie-4c371",
+    "storage_bucket": "themovie-4c371.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607820103789:android:488fecc10e191b0c2cbf64",
+        "android_client_info": {
+          "package_name": "com.example.themovie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFEuDyDncrfcIO555UvMPK_p0EkiTzr18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
