@@ -6,9 +6,13 @@ Tecnologias utilizadas: Kotlin, Android Jetpack, Coroutines, Live Data, MVVM, In
 
 
 <div align="left">
-<img src="https://github.com/MeiaNoite636/MovieApp/assets/91136155/f292df74-3e24-4c60-a9e1-be19e4bd6a3d" width="300px" />
+  <img src="https://github.com/MeiaNoite636/MovieApp/assets/91136155/f292df74-3e24-4c60-a9e1-be19e4bd6a3d" width="300px" />
 
   <img src="https://github.com/MeiaNoite636/MovieApp/assets/91136155/54e34864-a5a8-4884-b5c3-575b4e805260" width="300px" />
+
+  <img src="https://github.com/MeiaNoite636/MovieApp/assets/91136155/524842db-1dcc-49c9-91de-d7bc1320cf13" width="300px" />
+
+  
 </div>
 </div>
 
