@@ -5,7 +5,7 @@ Este app tem como objetivo ter as mesmas funcionalidades de outras plataformas d
 Tecnologias utilizadas: Kotlin, Android Jetpack, Coroutines, Live Data, MVVM, Injeção de Dependência, SQLite, Room, Firebase, OkHttp, API Rest, Retrofit, Glide
 
 
-<div align="left">
+<div align="center">
   <img src="https://github.com/MeiaNoite636/MovieApp/assets/91136155/f292df74-3e24-4c60-a9e1-be19e4bd6a3d" width="290px" />
 
   <img src="https://github.com/MeiaNoite636/MovieApp/assets/91136155/54e34864-a5a8-4884-b5c3-575b4e805260" width="300px" />
