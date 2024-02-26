@@ -2,6 +2,8 @@ package com.example.themovie.domain.repository.movie
 
 import com.example.themovie.data.model.CreditResponse
 import com.example.themovie.data.model.MovieResponse
+import com.example.themovie.data.model.MovieReviewResponse
+import com.example.themovie.domain.model.MovieReview
 
 interface MovieDetailsRepository {
 
@@ -22,5 +24,11 @@ interface MovieDetailsRepository {
         language: String?,
         movieId: Int?
     ): List<MovieResponse>
+
+    suspend fun getMovieReviews(
+        apiKey: String?,
+        language: String?,
+        movieId: Int?
+    ): List<MovieReviewResponse>
 
 }

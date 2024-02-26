@@ -3,15 +3,11 @@ package com.example.themovie.data.model
 import com.google.gson.annotations.SerializedName
 
 data class AuthorDetailsResponse(
-    @SerializedName("name")
-    val name: String?,
+    @SerializedName("name") val name: String?,
 
-    @SerializedName("username")
-    val username: String?,
+    @SerializedName("username") val username: String?,
 
-    @SerializedName("avatar_path")
-    val avatarPath: String?,
+    @SerializedName("avatar_path") val avatarPath: String?,
 
-    @SerializedName("rating")
-    val rating: Int?
+    @SerializedName("rating") val rating: Int?
 )

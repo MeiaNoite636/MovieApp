@@ -1,9 +1,6 @@
 package com.example.themovie.data.api
 
-import com.example.themovie.data.model.BasePaginationRemote
-import com.example.themovie.data.model.CreditResponse
-import com.example.themovie.data.model.GenresResponse
-import com.example.themovie.data.model.MovieResponse
+import com.example.themovie.data.model.*
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -50,5 +47,12 @@ interface ServiceAPI {
         @Query("api_key") apiKey: String?,
         @Query("language") language: String?,
     ): BasePaginationRemote<List<MovieResponse>>
+
+    @GET("movie/{movie_id}/reviews")
+    suspend fun getMovieReviews(
+        @Path("movie_id") movieId: Int?,
+        @Query("api_key") apiKey: String?,
+        @Query("language") language: String?,
+    ): BasePaginationRemote<List<MovieReviewResponse>>
 
 }

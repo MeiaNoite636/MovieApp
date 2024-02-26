@@ -6,7 +6,7 @@
     app:startDestination="@id/menu_home">
     <fragment
         android:id="@+id/menu_home"
-        android:name="com.example.themovie.presenter.main.bottombar.home.HomeFragment"
+        android:name="com.example.themovie.presentation.main.bottombar.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -15,27 +15,27 @@
     </fragment>
     <fragment
         android:id="@+id/menu_search"
-        android:name="com.example.themovie.presenter.main.bottombar.search.SearchFragment"
+        android:name="com.example.themovie.presentation.main.bottombar.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/menu_favorite"
-        android:name="com.example.themovie.presenter.main.bottombar.favorite.FavoriteFragment"
+        android:name="com.example.themovie.presentation.main.bottombar.favorite.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/menu_download"
-        android:name="com.example.themovie.presenter.main.bottombar.download.DownloadFragment"
+        android:name="com.example.themovie.presentation.main.bottombar.download.DownloadFragment"
         android:label="fragment_download"
         tools:layout="@layout/fragment_download" />
     <fragment
         android:id="@+id/menu_profile"
-        android:name="com.example.themovie.presenter.main.bottombar.profile.ProfileFragment"
+        android:name="com.example.themovie.presentation.main.bottombar.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/movieGenreFragment"
-        android:name="com.example.themovie.presenter.main.moviegenre.MovieGenreFragment"
+        android:name="com.example.themovie.presentation.main.moviegenre.MovieGenreFragment"
         android:label="fragment_movie_genre"
         tools:layout="@layout/fragment_movie_genre" >
         <argument
@@ -47,7 +47,7 @@
     </fragment>
     <fragment
         android:id="@+id/movieDetailsFragment"
-        android:name="com.example.themovie.presenter.main.movie_details.MovieDetailsFragment"
+        android:name="com.example.themovie.presentation.main.moviedetails.details.MovieDetailsFragment"
         android:label="fragment_movie_details"
         tools:layout="@layout/fragment_movie_details" >
         <argument

@@ -1,17 +1,18 @@
 package com.example.themovie.data.mapper
 
+import com.example.themovie.data.local.entity.MovieEntity
 import com.example.themovie.data.model.*
 import com.example.themovie.domain.model.*
-import com.example.themovie.presenter.model.GenrePresentation
+import com.example.themovie.presentation.model.GenrePresentation
 
-fun GenreResponse.toDomain(): Genre{
+fun GenreResponse.toDomain(): Genre {
     return Genre(
         id = id,
         name = name
     )
 }
 
-fun MovieResponse.toDomain(): Movie{
+fun MovieResponse.toDomain(): Movie {
     return Movie(
         adult = adult,
         backdropPath = backdropPath,
@@ -33,7 +34,7 @@ fun MovieResponse.toDomain(): Movie{
     )
 }
 
-fun Genre.toPresentation(): GenrePresentation{
+fun Genre.toPresentation(): GenrePresentation {
     return GenrePresentation(
         id = id,
         name = name,
@@ -41,13 +42,13 @@ fun Genre.toPresentation(): GenrePresentation{
     )
 }
 
-fun CountryResponse.toDomain(): Country{
+fun CountryResponse.toDomain(): Country {
     return Country(
         name = name
     )
 }
 
-fun PersonResponse.toDomain():Person{
+fun PersonResponse.toDomain(): Person {
     return Person(
         adult = adult,
         gender = gender,
@@ -64,7 +65,7 @@ fun PersonResponse.toDomain():Person{
     )
 }
 
-fun CreditResponse.toDomain(): Credit{
+fun CreditResponse.toDomain(): Credit {
     return Credit(
         cast = cast?.map {
             it.toDomain()
@@ -72,23 +73,42 @@ fun CreditResponse.toDomain(): Credit{
     )
 }
 
-fun AuthorDetailsResponse.toDomain(): AuthorDetails{
+fun AuthorDetailsResponse.toDomain(): AuthorDetails {
     return AuthorDetails(
         name = name,
         username = username,
-        avatarPath = "https://image.tmdb.org/t/p/w500$avatarPath",
+        avatarPath = avatarPath,
         rating = rating
     )
 }
 
-fun MovieReviewResponse.toDomain(): MovieReview{
+fun MovieReviewResponse.toDomain(): MovieReview {
     return MovieReview(
         author = author,
         authorDetails = authorDetailsResponse?.toDomain(),
         content = content,
         createdAt = createdAt,
-        id= id,
+        id = id,
         updatedAt = updatedAt,
         url = url
+    )
+}
+
+fun Movie.toEntity(): MovieEntity {
+    return MovieEntity(
+        id = id,
+        title = title,
+        poster = posterPath,
+        runtime = runtime,
+        insertion = System.currentTimeMillis()
+    )
+}
+
+fun MovieEntity.toDomain(): Movie {
+    return Movie(
+        id = id,
+        title = title,
+        posterPath = poster,
+        runtime = runtime
     )
 }
